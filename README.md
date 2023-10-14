@@ -37,3 +37,4 @@ Admin :
 -- Can check the total available balance of the bank.
 -- Can check the total loan amount.
 -- Can on or off the loan feature of the bank.
+-- Can add interest to the savings account
