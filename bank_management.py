@@ -247,7 +247,7 @@ class CurrentAccount(Bank_account):
             self.bank_balance -= user.loan
 
     def withdraw(self, amount):
-        if amount > 0 and (self.balance - amount) >= self.limit:
+        if amount > 0 and (self.balance - amount) >= self.lim:
             if amount <= self.bank_balance:
                 self.balance -= amount
                 print("\nWithdrawing.....Please wait....")
@@ -269,7 +269,7 @@ class CurrentAccount(Bank_account):
             for u in Bank_account.accounts:
                 # print(u.name)
                 if u.name == user:
-                    if amount < self.balance and (self.balance - amount) >= self.limit:
+                    if amount < self.balance and (self.balance - amount) >= self.lim:
                         u.balance += amount
                         self.balance -= amount
                         print(
